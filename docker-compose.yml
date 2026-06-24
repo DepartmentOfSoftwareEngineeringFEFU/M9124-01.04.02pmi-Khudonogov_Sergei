@@ -1,0 +1,10 @@
+version: '3'
+services:
+  app:
+    build: .
+    ports:
+      - "5000:5000"
+      - "8082:8082" 
+    volumes:
+      - ./ice_data_cache:/app/ice_data_cache
+      - ./instance:/app/instance
